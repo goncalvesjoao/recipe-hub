@@ -1,8 +1,4 @@
 :root {
-  --pico-form-element-spacing-vertical: 0.7rem;
-  --pico-form-element-spacing-horizontal: 1rem;
-  --pico-font-size: 1rem;
-
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -15,6 +11,9 @@
   --space-14: 3.5rem;
   --space-16: 4rem;
   --space-18: 4.5rem;
+
+  --pico-spacing: var(--space-3);
+  --pico-font-size: var(--space-4);
 }
 
 @layer utilities {
@@ -144,8 +143,6 @@
   }
 }
 
-small {
-  [role=button], [type=button], [type=file]::file-selector-button, [type=reset], [type=submit], button {
-    padding: calc(var(--pico-form-element-spacing-vertical) - 0.25rem) calc(var(--pico-form-element-spacing-horizontal) - 0.25rem);
-  }
+[role=button], [type=button], [type=file]::file-selector-button, [type=reset], [type=submit], button {
+  padding: calc(var(--pico-nav-link-spacing-vertical) - var(--pico-border-width) * 2) var(--pico-nav-link-spacing-horizontal);
 }

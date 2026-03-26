@@ -1,13 +1,4 @@
-<nav>
-  <h1><%= @recipe.name %></h1>
-
-  <div>
-    <small><button class="outline secondary">❤️ 120</button></small>
-    <%# if Current.user == @recipe.user %>
-    <small><%= link_to t('.edit'), edit_recipe_path(@recipe), type: 'button' %></small>
-    <%# end %>
-  </div>
-</nav>
+<%= render "recipe_header", recipe: @recipe %>
 
 <p>By <%= link_to "👤 #{@recipe.user.email_address}", user_path(@recipe.user) %></p>
 

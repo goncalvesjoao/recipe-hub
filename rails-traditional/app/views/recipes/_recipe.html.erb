@@ -1,8 +1,7 @@
 <article id="<%= dom_id recipe %>" class="col-4">
-  <h2><%= recipe.name %></h2>
+  <%= render "recipe_header", recipe: recipe %>
 
   <div class="hstack justify-between items-center mb-3">
-    <small><button class="outline secondary">❤️ 120</button></small>
     <span>By <%= link_to "👤 #{recipe.user.email_address}", user_path(recipe.user) %></span>
   </div>
 
