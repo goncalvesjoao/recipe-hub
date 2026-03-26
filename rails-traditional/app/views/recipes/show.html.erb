@@ -1,10 +1,28 @@
-<p style="color: green"><%= notice %></p>
+<nav>
+  <h1><%= @recipe.name %></h1>
 
-<%= render @recipe %>
+  <div>
+    <small><button class="outline secondary">❤️ 120</button></small>
+    <%# if Current.user == @recipe.user %>
+    <small><%= link_to t('.edit'), edit_recipe_path(@recipe), type: 'button' %></small>
+    <%# end %>
+  </div>
+</nav>
 
-<div>
-  <%= link_to "Edit this recipe", edit_recipe_path(@recipe) %> |
-  <%= link_to "Back to recipes", recipes_path %>
+<p>By <%= link_to "👤 #{@recipe.user.email_address}", user_path(@recipe.user) %></p>
 
-  <%= button_to "Destroy this recipe", @recipe, method: :delete %>
-</div>
+<img src="https://via.placeholder.com/600x300" alt="recipe">
+
+<h2>Ingredients</h2>
+<ul>
+  <li>200g Spaghetti</li>
+  <li>2 Eggs</li>
+  <li>100g Pancetta</li>
+</ul>
+
+<h2>Steps</h2>
+<p>
+  1. Boil pasta<br>
+  2. Cook pancetta<br>
+  3. Mix everything
+</p>
