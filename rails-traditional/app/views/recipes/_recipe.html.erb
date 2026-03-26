@@ -1,0 +1,14 @@
+<article id="<%= dom_id recipe %>" class="col-4">
+  <h2><%= recipe.name %></h2>
+
+  <div class="hstack justify-between items-center mb-3">
+    <small><button class="outline secondary">❤️ 120</button></small>
+    <span>By <%= link_to "👤 #{recipe.user.email_address}", user_path(recipe.user) %></span>
+  </div>
+
+  <img src="https://picsum.photos/seed/12/600/400" alt="recipe" />
+
+  <footer>
+    <%= link_to "See more", recipe_path(recipe), class: "w-100", type: 'button' %>
+  </footer>
+</article>

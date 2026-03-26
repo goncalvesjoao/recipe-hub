@@ -1,0 +1,9 @@
+<h1>Recipes</h1>
+
+<% content_for :title, "Recipes" %>
+
+<section id="recipes" class="row">
+  <% @recipes.each do |recipe| %>
+    <%= render recipe %>
+  <% end %>
+</section>
