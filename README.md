@@ -88,7 +88,7 @@ The goal of this repository is to explore how the same product requirements can 
 
 ---
 
-### Sign Up (`/sign_up`)
+### Sign Up (`/signup`)
 
 - Public page
 - Fields:

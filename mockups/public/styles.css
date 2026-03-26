@@ -17,19 +17,10 @@
   --space-18: 4.5rem;
 }
 
-small {
-  [role=button], [type=button], [type=file]::file-selector-button, [type=reset], [type=submit], button {
-    padding: calc(var(--pico-form-element-spacing-vertical) - 0.25rem) calc(var(--pico-form-element-spacing-horizontal) - 0.25rem);
-  }
-}
-
-/* copied from: https://github.com/knadh/oat/blob/master/src/css/utilities.css */
 @layer utilities {
   .align-left { text-align: start; }
   .align-center { text-align: center; }
   .align-right { text-align: end; }
-  .text-light { color: var(--muted-foreground); }
-  .text-lighter { color: var(--faint-foreground); }
 
   .flex { display: flex; }
   .flex-col { flex-direction: column; }
@@ -51,6 +42,7 @@ small {
       margin: 0;
     }
   }
+
   .vstack {
     display: flex;
     flex-direction: column;
@@ -59,26 +51,25 @@ small {
 
   .gap-1 { gap: var(--space-1); }
   .gap-2 { gap: var(--space-2); }
+  .gap-3 { gap: var(--space-3); }
   .gap-4 { gap: var(--space-4); }
+  .gap-5 { gap: var(--space-5); }
 
   .mt-0 { margin-top: 0 !important; }
+  .mt-1 { margin-top: var(--space-1) !important; }
   .mt-2 { margin-top: var(--space-2) !important; }
+  .mt-3 { margin-top: var(--space-3) !important; }
   .mt-4 { margin-top: var(--space-4) !important; }
-  .mt-6 { margin-top: var(--space-6) !important; }
+  .mt-5 { margin-top: var(--space-5) !important; }
 
   .mb-0 { margin-bottom: 0 !important; }
+  .mb-1 { margin-bottom: var(--space-1) !important; }
   .mb-2 { margin-bottom: var(--space-2) !important; }
+  .mb-3 { margin-bottom: var(--space-3) !important; }
   .mb-4 { margin-bottom: var(--space-4) !important; }
-  .mb-6 { margin-bottom: var(--space-6) !important; }
-  .p-4 { padding: var(--space-4); }
+  .mb-5 { margin-bottom: var(--space-5) !important; }
 
   .w-100 { width: 100%; }
-
-  :is(ul, ol, a).unstyled {
-    list-style: none;
-    text-decoration: none;
-    padding: 0;
-  }
 }
 
 /* copied from: https://github.com/knadh/oat/blob/master/src/css/grid.css */
@@ -150,5 +141,11 @@ small {
       --offset: 0;
       margin-inline-start: 0;
     }
+  }
+}
+
+small {
+  [role=button], [type=button], [type=file]::file-selector-button, [type=reset], [type=submit], button {
+    padding: calc(var(--pico-form-element-spacing-vertical) - 0.25rem) calc(var(--pico-form-element-spacing-horizontal) - 0.25rem);
   }
 }

@@ -33,7 +33,7 @@ The mockups are stored as static HTML files in `public/`.
 Examples:
 
 - `/login` -> `public/login.html`
-- `/sign_up` -> `public/sign_up.html`
+- `/signup` -> `public/signup.html`
 - `/recipes` -> `public/recipes/index.html`
 - `/recipes/1` -> `public/recipes/1.html`
 - `/recipes/1/edit` -> `public/recipes/1/edit.html`
