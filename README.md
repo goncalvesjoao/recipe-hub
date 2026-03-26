@@ -2,9 +2,7 @@
 
 A reference implementation of a **recipe sharing platform**, built across multiple web frameworks.
 
-The goal of this repository is to explore how the same product requirements can be implemented using different stacks (e.g., Rails, Next.js, Django), while keeping **domain logic and UX consistent**.
-
----
+The goal of this repository is to explore how the same product requirements can be implemented using different stacks (e.g., Rails, nodejs, etc.), while keeping **domain logic and UX consistent**.
 
 ## Core Concepts
 
@@ -12,8 +10,6 @@ The goal of this repository is to explore how the same product requirements can 
 - Recipes are composed of ingredients
 - Users can like recipes
 - Profiles aggregate user contributions
-
----
 
 ## Domain Model
 
@@ -39,6 +35,12 @@ The goal of this repository is to explore how the same product requirements can 
 
 ---
 
+### Ingredient
+
+- `name: string`
+
+---
+
 ### RecipeUserLike
 
 - `belongs_to :user`
@@ -56,14 +58,6 @@ The goal of this repository is to explore how the same product requirements can 
 - `measuring_unit: string`
 - `belongs_to :recipe`
 - `belongs_to :ingredient`
-
----
-
-### Ingredient
-
-- `name: string`
-
----
 
 ## UI Specification
 
@@ -85,8 +79,6 @@ The goal of this repository is to explore how the same product requirements can 
 
 - MIT License reference
 - Link to GitHub repository
-
----
 
 ## Pages
 
@@ -246,8 +238,6 @@ Each recipe item shows:
 - Edit link
 - Delete button
 
----
-
 ## User Stories
 
 ### US-001 — User Login
@@ -367,8 +357,6 @@ Each recipe item shows:
 **As a** system
 **I want to** restrict certain actions to authenticated users
 **So that** ownership and integrity are preserved
-
----
 
 ## License
 
