@@ -68,3 +68,4 @@ group :test do
 end
 
 gem 'json', '>= 2.0.0'
+gem 'pry-byebug', '>= 3.12.0'

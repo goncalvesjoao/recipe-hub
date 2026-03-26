@@ -1,10 +1,6 @@
 <h1>Sign Up</h1>
 
 <%= form_with model: @user, url: sign_up_path do |form| %>
-  <% if form.object.errors.any? %>
-    <div>Error: <%= form.object.errors.full_messages.first %></div>
-  <% end %>
-
   <fieldset>
     <%= form.label :email_address %>
     <%= form.email_field :email_address, required: true, autocomplete: "email" %>
