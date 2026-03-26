@@ -24,6 +24,35 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header class="container">
+      <nav role="navigation" data-position="end" data-breakpoint="lg">
+        <ul>
+          <li><h4 class="mb-0"><a href="/" aria-current="page">RecipeHub</a></h4></li>
+        </ul>
+
+        <ul>
+          <li><strong>Give Us a like on GitHub!</strong></li>
+        </ul>
+
+              <!-- <input type="checkbox" id="hamburger-toggle">
+        <label for="hamburger-toggle" style="font-size: calc(var(--pico-font-size) * 2);" aria-label="Menu" aria-controls="nav-example2"> ≡ </label> -->
+
+        <ol id="nav-example2" role="list">
+          <li role="listitem"><%= active_link_to(t('.login'), new_session_path) %></li>
+          <li role="listitem"><%= active_link_to(t('.signup'), sign_up_path) %></li>
+        </ol>
+      </nav>
+    </header>
+
+    <main class="container">
+      <%= yield %>
+    </main>
+
+    <footer class="container">
+      <hr>
+      <small>
+        MIT License • <a href="https://github.com/goncalvesjoao/recipe-hub" target="_blank">GitHub</a>
+      </small>
+    </footer>
   </body>
 </html>
