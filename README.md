@@ -98,7 +98,7 @@ The goal of this repository is to explore how the same product requirements can 
   - Password confirmation
 - On success:
   - User is authenticated
-  - Redirect to `/recipes`
+  - Redirect to `/`
 
 ---
 
@@ -109,17 +109,17 @@ The goal of this repository is to explore how the same product requirements can 
   - Email
   - Password
 - On success:
-  - Redirect to previous page or `/recipes`
+  - Redirect to previous page or `/`
 
 ---
 
 ### Recipes (`/recipes`)
 
-- Lists all recipes (see *Recipe Listing Rules*)
+- Lists all recipes (see [Recipe Listing Rules](#recipe-listing-rules))
 
 ---
 
-### Recipe Details (`/recipes/:recipe_id`)
+### Recipe Details (`/recipes/:id`)
 
 - Shows:
   - Name
@@ -161,7 +161,7 @@ The goal of this repository is to explore how the same product requirements can 
 
 ---
 
-### Edit Recipe (`/recipes/:recipe_id/edit`)
+### Edit Recipe (`/recipes/:id/edit`)
 
 - Requires authentication
 - Only accessible by owner
@@ -169,7 +169,7 @@ The goal of this repository is to explore how the same product requirements can 
 
 ---
 
-### User Profile (`/users/:user_id`)
+### User Profile (`/users/:id`)
 
 - Public page
 - Shows:
@@ -177,7 +177,7 @@ The goal of this repository is to explore how the same product requirements can 
   - Avatar
   - Number of recipes
   - Total likes received
-  - Recipe list (see *Recipe Listing Rules*)
+  - Recipe list (see [Recipe Listing Rules](#recipe-listing-rules))
 
 **If owner:**
 
@@ -213,10 +213,10 @@ The goal of this repository is to explore how the same product requirements can 
 
 ---
 
-### User Recipes (`/users/:user_id/recipes`)
+### User Recipes (`/users/:id/recipes`)
 
 - Public page
-- Lists user recipes (see *Recipe Listing Rules*)
+- Lists user recipes (see [Recipe Listing Rules](#recipe-listing-rules))
 
 ---
 
