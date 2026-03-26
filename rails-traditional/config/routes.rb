@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :recipes
+  resources :recipes do
+    resource :user_like, only: %i[ create destroy ], module: :recipes
+  end
   resources :users, only: %i[ show ]
   resource :session
   resources :passwords, param: :token
