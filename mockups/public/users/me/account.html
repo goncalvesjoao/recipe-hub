@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Hub</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --pico-form-element-spacing-vertical: 0.7rem;
+      --pico-form-element-spacing-horizontal: 1rem;
+      --pico-font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong>RecipeHub</strong></li>
+      </ul>
+      <ul>
+        <li>
+          <details class="dropdown">
+            <summary>👤</summary>
+            <ul>
+              <li><a href="/recipes/new">Create Recipe</a></li>
+              <li><a href="/users/me">My Profile</a></li>
+              <li><a href="/users/me/account">My Account</a></li>
+              <li><a href="#">Log out</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>My Account</h1>
+
+    <form>
+      <label>New Password
+        <input type="password">
+      </label>
+
+      <button type="submit">Change Password</button>
+    </form>
+
+    <hr>
+
+    <button class="contrast">Delete Account</button>
+  </main>
+
+  <footer class="container">
+    <hr>
+    <small>
+      MIT License • <a href="#">GitHub</a>
+    </small>
+  </footer>
+</body>
+</html>

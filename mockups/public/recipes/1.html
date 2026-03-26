@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Hub</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --pico-form-element-spacing-vertical: 0.7rem;
+      --pico-form-element-spacing-horizontal: 1rem;
+      --pico-font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong>RecipeHub</strong></li>
+      </ul>
+      <ul>
+        <li>
+          <details class="dropdown">
+            <summary>👤</summary>
+            <ul>
+              <li><a href="/recipes/new">Create Recipe</a></li>
+              <li><a href="/users/me">My Profile</a></li>
+              <li><a href="/users/me/account">My Account</a></li>
+              <li><a href="#">Log out</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <a href="/">← Back</a>
+
+    <h1>Spaghetti Carbonara</h1>
+    <p>By <a href="/users/1">👤 John</a></p>
+
+    <img src="https://via.placeholder.com/600x300" alt="recipe">
+
+    <p><strong>❤️ 120</strong></p>
+    <button>Like</button>
+
+    <h2>Ingredients</h2>
+    <ul>
+      <li>200g Spaghetti</li>
+      <li>2 Eggs</li>
+      <li>100g Pancetta</li>
+    </ul>
+
+    <h2>Steps</h2>
+    <p>
+      1. Boil pasta<br>
+      2. Cook pancetta<br>
+      3. Mix everything
+    </p>
+
+    <!-- Owner -->
+    <a href="/recipes/1/edit">Edit</a>
+  </main>
+
+  <footer class="container">
+    <hr>
+    <small>
+      MIT License • <a href="#">GitHub</a>
+    </small>
+  </footer>
+</body>
+</html>

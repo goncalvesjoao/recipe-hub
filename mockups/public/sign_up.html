@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Hub</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --pico-form-element-spacing-vertical: 0.7rem;
+      --pico-form-element-spacing-horizontal: 1rem;
+      --pico-font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong>RecipeHub</strong></li>
+      </ul>
+      <ul>
+        <!-- Unauthenticated -->
+        <li><a href="/login">Login</a></li>
+        <li><a href="/sign_up">Sign Up</a></li>
+
+        <!-- Authenticated (swap manually when needed) -->
+        <!--
+        <li>
+          <details role="list">
+            <summary>👤</summary>
+            <ul>
+              <li><a href="/recipes/new">Create Recipe</a></li>
+              <li><a href="/users/me">My Profile</a></li>
+              <li><a href="/users/me/account">My Account</a></li>
+              <li><a href="#">Log out</a></li>
+            </ul>
+          </details>
+        </li>
+        -->
+      </ul>
+    </nav>
+  </header>
+
+ <main class="container">
+    <h1>Sign Up</h1>
+
+    <form>
+      <label>Name
+        <input type="text">
+      </label>
+
+      <label>Email
+        <input type="email">
+      </label>
+
+      <label>Password
+        <input type="password">
+      </label>
+
+      <label>Confirm Password
+        <input type="password">
+      </label>
+
+      <button type="submit">Create Account</button>
+    </form>
+  </main>
+
+  <footer class="container">
+    <hr>
+    <small>
+      MIT License • <a href="#">GitHub</a>
+    </small>
+  </footer>
+</body>
+</html>

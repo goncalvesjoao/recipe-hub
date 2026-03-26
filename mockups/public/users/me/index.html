@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Hub</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --pico-form-element-spacing-vertical: 0.7rem;
+      --pico-form-element-spacing-horizontal: 1rem;
+      --pico-font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong>RecipeHub</strong></li>
+      </ul>
+      <ul>
+        <li>
+          <details class="dropdown">
+            <summary>👤</summary>
+            <ul>
+              <li><a href="/recipes/new">Create Recipe</a></li>
+              <li><a href="/users/me">My Profile</a></li>
+              <li><a href="/users/me/account">My Account</a></li>
+              <li><a href="#">Log out</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <a href="/">← Back</a>
+
+    <h1>My Profile</h1>
+    <p>👤 Avatar</p>
+
+    <p>Recipes: 10</p>
+    <p>Total Likes: 320</p>
+
+    <a href="/users/me/edit">Edit Profile</a>
+
+    <h2>Recipes</h2>
+
+    <article>
+      <h3>Spaghetti</h3>
+      <a href="/recipes/1">See more</a>
+    </article>
+  </main>
+
+  <footer class="container">
+    <hr>
+    <small>
+      MIT License • <a href="#">GitHub</a>
+    </small>
+  </footer>
+</body>
+</html>
