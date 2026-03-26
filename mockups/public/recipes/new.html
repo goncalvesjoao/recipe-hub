@@ -5,28 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recipe Hub</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yohns/picocss@2.2.10/css/pico.min.css" />
-  <style>
-    :root {
-      --pico-form-element-spacing-vertical: 0.7rem;
-      --pico-form-element-spacing-horizontal: 1rem;
-      --pico-font-size: 1rem;
-    }
-  </style>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yohns/picocss@2.2.10/css/pico.min.css" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <header class="container">
     <nav role="navigation" data-position="end" data-breakpoint="lg">
       <ul>
-        <li><a href="/">RecipeHub</a></li>
+        <li><h4 class="mb-0"><a href="/">RecipeHub</a></h4></li>
       </ul>
 
       <ul>
         <li><strong>Give Us a like on GitHub!</strong></li>
       </ul>
 
-      <input type="checkbox" id="hamburger-toggle">
-      <label for="hamburger-toggle" style="font-size: calc(var(--pico-font-size) * 2);" aria-label="Menu" aria-controls="nav-example2"> ≡ </label>
+            <!-- <input type="checkbox" id="hamburger-toggle">
+      <label for="hamburger-toggle" style="font-size: calc(var(--pico-font-size) * 2);" aria-label="Menu" aria-controls="nav-example2"> ≡ </label> -->
 
       <ol id="nav-example2" role="list">
         <li><a role="listitem" href="/recipes/new" aria-current="page">Add Recipe</a></li>
