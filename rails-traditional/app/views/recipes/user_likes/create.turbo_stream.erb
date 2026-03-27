@@ -1,0 +1,3 @@
+<%= turbo_stream.replace "#{dom_id(@recipe)}-header" do %>
+  <%= render "recipes/recipe_header", recipe: @recipe %>
+<% end %>
