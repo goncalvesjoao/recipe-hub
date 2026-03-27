@@ -1,7 +1,8 @@
 class Recipes::UserLikesController < Recipes::BaseController
   # POST /user_likes
   def create
-    # @recipe_user_like = @recipe.recipe_user_likes.create!(user: Current.user)
+    @recipe_user_like = @recipe.recipe_user_likes.find_by(user: Current.user)
+    @recipe_user_like ||= @recipe.recipe_user_likes.create!(user: Current.user)
   end
 
   # DELETE /user_likes
