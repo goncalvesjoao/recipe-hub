@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "indexedAt": 1774606335751,
+  "controllers": {
+    "hello": {
+      "filePath": "/Users/goncalvesjoao/projects/recipe-hub/rails-traditional/app/javascript/controllers/hello_controller.js",
+      "targets": [],
+      "values": [],
+      "outlets": [],
+      "actions": [],
+      "classes": [],
+      "mtime": 1774515855607.0842
+    }
+  }
+}
